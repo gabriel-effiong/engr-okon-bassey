@@ -29,6 +29,14 @@ const PAYSTACK_PUBLIC_KEY     = 'pk_test_YOUR_PAYSTACK_PUBLIC_KEY';
 const CAMPAIGN_EMAIL          = 'donor@johndoe2025.ng'; // Paystack sends receipt here
 
 
+function toggleNews(){
+
+  const news = document.getElementById("news1");
+
+  news.classList.toggle("show");
+
+}
+
 /* ══════════════════════════════════════
    HELPER: Show toast notification
 ══════════════════════════════════════ */
