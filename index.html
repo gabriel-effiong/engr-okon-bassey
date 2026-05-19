@@ -148,87 +148,84 @@
     </section>
 
     <!-- ELECTION UPDATES -->
-    <section id="updates">
-      <div class="updates-header fade-in">
-        <div>
-          <div class="section-tag">Campaign News</div>
-          <h2 class="section-title">Election <em>Updates</em></h2>
-        </div>
-        <a href="#" class="btn-outline" style="white-space:nowrap">All Updates</a>
+<section id="updates">
+
+  <div class="updates-header fade-in">
+    <div>
+      <div class="section-tag">Campaign News</div>
+      <h2 class="section-title">Election <em>Updates</em></h2>
+    </div>
+  </div>
+
+  <div class="updates-grid">
+
+    <!-- FEATURED CARD -->
+    <div class="update-card fade-in">
+
+      <div class="update-category">Breaking News</div>
+      <div class="update-date">March 15, 2025</div>
+      <h3 class="update-title">
+        Campaign Rally Draws Record Crowd at Unity Ground —
+        Over 20,000 Supporters in Attendance
+      </h3>
+      <p class="update-excerpt">
+        In an overwhelming show of solidarity, citizens from all twelve wards gathered...
+      </p>
+      <button class="read-more-btn" onclick="toggleNews()">
+        Read More →
+      </button>
+      <div class="full-news" id="news1">
+        <p>
+          In an overwhelming show of solidarity, citizens from all twelve wards gathered
+          to affirm their commitment to the vision of a new dawn.
+
+          Thousands filled the Unity Ground as supporters waved banners,
+          cheered passionately, and listened attentively to speeches focused
+          on development, empowerment, infrastructure, and youth inclusion.
+
+          Community leaders described the rally as one of the largest political
+          gatherings ever witnessed in the region.
+        </p>
+      </div>
+    </div>
+
+      <div class="full-news" id="news1">
+        <p>
+          In an overwhelming show of solidarity, citizens from all twelve wards gathered
+          to affirm their commitment to the vision of a new dawn.
+
+          Thousands filled the Unity Ground as supporters waved banners,
+          cheered passionately, and listened attentively to speeches focused
+          on development, empowerment, infrastructure, and youth inclusion.
+
+          Community leaders described the rally as one of the largest political
+          gatherings ever witnessed in the region.
+        </p>
       </div>
 
-      <div class="updates-grid">
-        <!-- Featured -->
-        <!-- <div class="update-card featured fade-in">
-          <div class="update-category">Breaking News</div>
-          <div class="update-date">March 15, 2025</div>
-          <h3 class="update-title">Campaign Rally Draws Record Crowd at Unity Ground — Over 20,000 Supporters in Attendance</h3>
-          <p class="update-excerpt">In an overwhelming show of solidarity, citizens from all twelve wards gathered to affirm their commitment to the vision of a new dawn. The atmosphere was electric, and the message was clear.</p>
-          <a href="#" class="update-link">Read More</a>
-        </div> -->
- 
-        <div class="news-card">
+    </div>
 
-          <span class="tag">BREAKING NEWS</span>
 
-          <p class="date">MARCH 15, 2025</p>  
+    
+    
+       <div class="update-card fade-in">
+       <div class="update-category">Policy</div>
+       <div class="update-date">March 10, 2025</div>
+       <h3 class="update-title">
+        Education Manifesto Unveiled — Free Tuition Initiative for Public Schools
+       </h3>
+       <p class="update-excerpt">
+        Details of a comprehensive education reform plan covering infrastructure,
+        teacher welfare, and student scholarships.
+       </p>
+       <a href="#" class="update-link">Read More</a>
+     </div>
 
-          <h2> 
-            Campaign Rally Draws Record Crowd at Unity Ground —
-            Over 20,000 Supporters in Attendance
-          </h2>
+     
+  </div>
+</section>
 
-          <p class="short-text">
-            In an overwhelming show of solidarity, citizens from all twelve wards gathered...
-          </p>
-
-          <!-- HIDDEN FULL CONTENT -->
-          <div class="full-news" id="news1">
-           <p>
-             In an overwhelming show of solidarity, citizens from all twelve wards gathered
-             to affirm their commitment to the vision of a new dawn.
- 
-             Thousands filled the Unity Ground as supporters waved banners, cheered passionately,
-             and listened attentively to speeches focused on development, empowerment,
-             infrastructure, and youth inclusion.
-
-             Community leaders described the rally as one of the largest political gatherings
-             ever witnessed in the region.
-            </p>
-          </div>
-
-          <button class="read-more-btn" onclick="toggleNews()">
-            READ MORE →
-          </button>
-
-        </div>
-
-        <div class="update-card fade-in">
-          <div class="update-category">Policy</div>
-          <div class="update-date">March 10, 2025</div>
-          <h3 class="update-title">Education Manifesto Unveiled — Free Tuition Initiative for Public Schools</h3>
-          <p class="update-excerpt">Details of a comprehensive education reform plan covering infrastructure, teacher welfare, and student scholarships.</p>
-          <a href="#" class="update-link">Read More</a>
-        </div>
-
-        <div class="update-card fade-in">
-          <div class="update-category">Press Release</div>
-          <div class="update-date">March 5, 2025</div>
-          <h3 class="update-title">Hon. Doe Receives Endorsement from State Elders Forum</h3>
-          <p class="update-excerpt">The respected council of community leaders formally endorses the candidacy following an extensive screening process.</p>
-          <a href="#" class="update-link">Read More</a>
-        </div>
-
-        <div class="update-card fade-in">
-          <div class="update-category">Event</div>
-          <div class="update-date">Feb 28, 2025</div>
-          <h3 class="update-title">Town Hall Meeting — Youth Forum on Employment &amp; Skills</h3>
-          <p class="update-excerpt">An open dialogue with young constituents on job creation, vocational training, and opportunities in the digital economy.</p>
-          <a href="#" class="update-link">Read More</a>
-        </div>
-      </div>
-    </section>
-
+   
     <!-- MANIFESTO -->
     <!-- <section id="manifesto"> 
       <div class="manifesto-inner">
@@ -542,5 +539,13 @@
 
     <!-- Campaign JavaScript -->
     <script src="main.js"></script>
+
+    <script>
+      function toggleNews() {
+       const news = document.getElementById("news1");
+
+       news.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
