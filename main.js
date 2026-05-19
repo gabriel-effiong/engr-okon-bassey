@@ -351,3 +351,45 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 }); // end DOMContentLoaded
+
+// MOBILE MENU
+
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// NAVBAR SCROLL
+
+window.addEventListener('scroll', function () {
+  const navbar = document.getElementById('navbar');
+
+  if(window.scrollY > 50){
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }  
+  
+});
+
+// FADE IN
+
+const fadeElements = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries)=> {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+
+  });
+
+}, {
+  threshold:0.2
+});
+
+fadeElements.forEach((el) => observe(el));
+
+// READ MORE
+function toggleNews() {
+  const news = document.getElementById('news1');
+  news.classList.toggle('show');
+}

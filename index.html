@@ -27,21 +27,28 @@
 
     <!--  NAVIGATION -->
     <nav id="navbar">
-       <div class="nav-logo">
-          <img src="images/logo1.jpg" alt="Chairman" class="logo-image" />
-        </div>
-      <a href="#hero" class="nav-logo">Engr <span>Okon Bassey</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#updates">Updates</a></li>
-        <!-- <li><a href="#manifesto">Manifesto</a></li> -->
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#endorsements">Endorsements</a></li>
-        <!-- <li><a href="#volunteer">Volunteer</a></li> -->
-        <!-- <li><a href="#donate" class="nav-cta">Donate</a></li> -->
-      </ul>
-      <div class="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
+      <div class="nav-container">
+        <!-- LOGO -->
+        <a href="#hero" class="nav-brand">
+         <img src="images/logo1.jpg" alt="logo">
+         <span>Engr Okon Bassey</span>
+        </a>
+
+        <!--LINKS  -->
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#updates">Updates</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#endorsements">Endorsements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> 
       </div>
     </nav>
 
@@ -62,13 +69,10 @@
       </div>
 
       <div class="hero-photo">
-        <div class="hero-photo-placeholder">
-          <img src="images/logo1.jpg" alt="Official Portrait">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <!-- <circle cx="12" cy="8" r="4"/> -->
-            <!-- <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/> -->
+        <div class="hero-photo">
+          <img src="images/logo1.jpg" alt="Engr Okon Bassey">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">  
           </svg>
-          <!-- <span>Candidate Photo</span> -->
         </div>
       </div>
 
@@ -76,7 +80,7 @@
     </section>
 
     <!--  ABOUT -->
-    <section id="a   bout">
+    <section id="about">
       <div class="about-grid">
 
       <!-- Photo & Stats -->
@@ -189,19 +193,6 @@
       </div>
     </div>
 
-    <div class="full-news" id="news1">
-      <p>
-        In an overwhelming show of solidarity, citizens from all twelve wards gathered
-        to affirm their commitment to the vision of a new dawn.
-
-        Thousands filled the Unity Ground as supporters waved banners,
-        cheered passionately, and listened attentively to speeches focused
-        on development, empowerment, infrastructure, and youth inclusion.
-
-        Community leaders described the rally as one of the largest political
-        gatherings ever witnessed in the region.
-      </p>
-    </div>
 
     <!-- </div> -->
 
@@ -291,57 +282,37 @@
         <div class="gallery-header fade-in">
           <div>
             <div class="section-tag">On the Ground</div>
-            <h2 class="section-title">Campaign <em>Gallery</em></h2>
+            <h2 class="section-title">
+              Campaign <em>Gallery</em>
+            </h2>
           </div>
-          <a href="#" class="btn-outline">View All</a>
         </div>
 
         <div class="gallery-grid">
+
+          <div class="gallery-item">
+            <img src="images/endo1.jpg" alt="">
+          </div>
+          
           <div class="gallery-item fade-in">
             <div class="gallery-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
-                <path d="M21 15l-5-5L5 21"/>
-              </svg>
-              <span>Rally Photo</span>
+              <img src="images/pic1.jpg" alt="">
             </div>
           </div>
-          <div class="gallery-item fade-in">
+
+          <div class="gallery-item">
             <div class="gallery-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
-                <path d="M21 15l-5-5L5 21"/>
-              </svg>
-              <span>Community Visit</span>
+              <img src="images/pic2.jpg" alt="">
             </div>
           </div>
-          <div class="gallery-item fade-in">
+
+          <div class="gallery-item">
             <div class="gallery-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
-                <path d="M21 15l-5-5L5 21"/>
-              </svg>
-              <span>Town Hall</span>
+              <img src="images/pic3.jpg" alt="">
             </div>
           </div>
-          <div class="gallery-item fade-in">
-            <div class="gallery-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
-                <path d="M21 15l-5-5L5 21"/>
-              </svg>
-              <span>School Visit</span>
-            </div>
-          </div>
-          <div class="gallery-item fade-in">
-            <div class="gallery-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
-                <path d="M21 15l-5-5L5 21"/>
-              </svg>
-              <span>Youth Forum</span>
-            </div>
-          </div>
+
+
         </div>
       </div>
     </section>
@@ -487,14 +458,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="social-row">
-            <a href="#" class="social-link" title="Facebook">f</a>
-            <a href="#" class="social-link" title="Instagram">ig</a>
-            <a href="#" class="social-link" title="Twitter/X">𝕏</a>
-            <a href="#" class="social-link" title="YouTube">▶</a>
-            <a href="#" class="social-link" title="WhatsApp">w</a>
-          </div> -->
         </div>
 
         <!-- Right: Form -->
