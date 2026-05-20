@@ -31,7 +31,10 @@
         <!-- LOGO -->
         <a href="#hero" class="nav-brand">
          <img src="images/logo1.jpg" alt="logo">
-         <span>Engr Okon Bassey</span>
+         <span class="brand-text">
+          <span class="white-text">Engr</span>
+          <span class="gold-text">Okon Bassey</span>
+         </span>
         </a>
 
         <!--LINKS  -->
@@ -67,15 +70,6 @@
           <a href="#manifesto" class="btn-outline">Our Vision</a>
         </div>
       </div>
-
-      <div class="hero-photo">
-        <div class="hero-photo">
-          <img src="images/logo1.jpg" alt="Engr Okon Bassey">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">  
-          </svg>
-        </div>
-      </div>
-
       <div class="hero-scroll">Scroll</div>
     </section>
 
@@ -246,7 +240,7 @@
          <div class="gallery-item">
            <img src="images/endo2.jpg" alt="">
          </div>
-        
+         
          <div class="gallery-item">
             <img src="images/endo1.jpg" alt="">
           </div>
@@ -444,11 +438,21 @@
     <script src="main.js"></script>
 
     <script>
-      function toggleNews() {
-       const news = document.getElementById("news1");
-
-       news.classList.toggle("show");
+      // MOBILE MENU
+      function toggleMenu(){
+       document.querySelector(".nav-links").classList.toggle("active");
       }
+
+      // NAVBAR SCROLL EFFECT
+      window.addEventListener("scroll", function(){
+       const navbar = document.getElementById("navbar");
+
+       if(window.scrollY > 50){
+          navbar.classList.add("scrolled");
+        }else{
+         navbar.classList.remove("scrolled");
+        }
+      });
     </script>
   </body>
 </html>
