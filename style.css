@@ -862,7 +862,7 @@ section { padding: 7rem 4rem; }
 }
 
 .gallery{
-  display:flex;
+  display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:25px;
 }
